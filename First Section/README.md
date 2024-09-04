@@ -1,0 +1,1 @@
+*I am starting my journey of learning javasript. This repo is creted to record my journey and all of my code that will be written and practices by me as a journal so that i can always visit here and understand my mistakes.*
