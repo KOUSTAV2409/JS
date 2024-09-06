@@ -95,8 +95,37 @@ Q3.3: Write a function that generates a random string of 8 characters by randoml
 
 // Q3.3:
 let randomString="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-console.log(randomString.length);
+// console.log(randomString.length);
+// console.log(randomString.split());
+let array1=Array.from(randomString)
+console.log(array1.length);
 
+// console.log(array1);
+
+
+
+
+/*
+read the given long string
+print the length of the long string
+
+*/
+
+
+
+/*
+4. Combination of Random Number Generation and String Manipulation
+
+Q4.1: Create a function that generates a random password of a specified length. The password should include at least one uppercase letter, one lowercase letter, one digit, and one special character (!@#$%^&*()).
+
+Q4.2: Write a function that shuffles a given string by randomly rearranging its characters.
+*/
+// Answer:
+// Q4.1
+/*
+enter the length value suppose lengthValue=7
+store the lengthValue
+*/
 
 
 

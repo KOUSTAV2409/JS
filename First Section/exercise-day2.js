@@ -67,7 +67,7 @@
                     // answer:
                     let company= "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
                     console.log(company);
-                    // now chaning this string into array using split method at the coma(,)
+                    // now changing this string into array using split method at the coma(,)
                     let arraycompany=company.split(",")
                     console.log(arraycompany);
                     // now accessing the value of zero(0) index from the array
