@@ -37,7 +37,8 @@ console.log(typeof newObj2.mySymb);  // now see the output . it is very interest
 // In this type of cases , if we want to use symbol data type inside an object, we have to declare the symbol data type in another way.
 let newObj3={
     [mySymb]:"place new",
-    mySymb:"okay"
+    mySymb:"okay",
+    state:"west bengal"
 }
 // Now checking the data type of mySymb inside the object:
 console.log(typeof newObj3[mySymb]);   // i am not understanding why this output is showing string instead of symbol. have to ask gpt for this.
@@ -46,6 +47,19 @@ console.log(newObj3);
 { mySymb: 'okay',
  [Symbol(key one)]: 'place new' }  */
 //  See the difference in the output when we are using [] and when we are not using []
+
+newObj3.state="WESTBENGAL"
+console.log(newObj3); // see the output: the value of state has been changed:==> { mySymb: 'okay', state: 'WESTBENGAL', [Symbol(key one)]: 'place new' }
+
+// But we can lock the value of an object so that the values cannot be changed any more in the bellow way with the use of object.freeze() method:
+Object.freeze(newObj3)
+console.log(newObj3);
+// Now trying to change the value of state once more and see what will happen:
+newObj3.state="Bangla"
+
+console.log(newObj3);  //The output is unchanged and still providing { mySymb: 'okay', state: 'WESTBENGAL', [Symbol(key one)]: 'place new' }
+// This is hapenning because , we have locked the value with the use of object.freeze() method
+
 
 
 
