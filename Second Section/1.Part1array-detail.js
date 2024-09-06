@@ -16,7 +16,7 @@ unshift()
 shift()
 includes()
 indexof()
-join()
+join()  ==> this method change change the data type of element from array object to string data type 
 slice()
 splice() 
 */
