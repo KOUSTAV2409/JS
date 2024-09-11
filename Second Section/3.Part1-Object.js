@@ -52,13 +52,27 @@ newObj3.state="WESTBENGAL"
 console.log(newObj3); // see the output: the value of state has been changed:==> { mySymb: 'okay', state: 'WESTBENGAL', [Symbol(key one)]: 'place new' }
 
 // But we can lock the value of an object so that the values cannot be changed any more in the bellow way with the use of object.freeze() method:
-Object.freeze(newObj3)
+// Object.freeze(newObj3)
 console.log(newObj3);
 // Now trying to change the value of state once more and see what will happen:
 newObj3.state="Bangla"
 
 console.log(newObj3);  //The output is unchanged and still providing { mySymb: 'okay', state: 'WESTBENGAL', [Symbol(key one)]: 'place new' }
 // This is hapenning because , we have locked the value with the use of object.freeze() method
+
+
+
+newObj3.greetings=function(){
+    return "hello bro , how are you?";
+    //This is another way of declaring a new function
+}
+console.log(newObj3.greetings());
+
+newObj3.greetings2=function(){
+    return `name of the state is ${this.state}`
+}
+console.log(newObj3.greetings2());
+
 
 
 
