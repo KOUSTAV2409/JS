@@ -1,5 +1,5 @@
 "user strict";
-// Here we will learn more about object and deep dive more into data types:-
+// Here we will learn more about object and  dive more into data types:-
 // We can declare an object in two ways :-
 // a) literal b) constructive
 
@@ -25,7 +25,7 @@ console.log(newObj["firstName"]); // This will also show koustav as output.
 // Use case of second method of accessing key values from a object is very usefull in the bellow concept when i will declare a symbol datatype:
 let mySymb=Symbol("key one")
 console.log(typeof mySymb); // type of this data type is symbol
-// Now putting the variable called mySymb inside the object.
+// Now putting the variable called mySymb inside an object.
 
 let newObj2={
     mySymb:"place one"
